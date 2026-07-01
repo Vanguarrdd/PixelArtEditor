@@ -1,0 +1,43 @@
+
+SCREEN_WIDTH = 1280
+SCREEN_HEIGHT = 720
+SCREEN_SIZE = (SCREEN_WIDTH, SCREEN_HEIGHT)
+SCREEN_CENTRE = (SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+
+BG_COLOR = (52, 78, 91)
+
+FPS = 60
+ROWS = 32
+COLS = 32
+PIXEL_SIZE = 10
+GAP = 2
+CELL_SIZE = PIXEL_SIZE + GAP
+
+
+CANVAS_WIDTH = COLS * PIXEL_SIZE
+CANVAS_HEIGHT = ROWS * PIXEL_SIZE
+
+CANVAS_X = (SCREEN_WIDTH - CANVAS_WIDTH) / 2
+CANVAS_Y = (SCREEN_HEIGHT - CANVAS_HEIGHT) / 2
+
+
+WHITE = (255, 255, 255)  # white
+BLACK = (0, 0, 0)        # black
+GREY = (128, 128, 128)  # gray
+DARK_GREY = (64, 64, 64)     # dark gray
+LIGHT_GREY = (192, 192, 192)  # light gray
+
+RED = (255, 0, 0)      # red
+GREEN = (0, 255, 0)      # green
+BLUE = (0, 0, 255)      # blue
+YELLOW = (255, 255, 0)    # yellow
+CYAN = (0, 255, 255)    # cyan
+MAGENTA = (255, 0, 255)    # magenta
+
+ORANGE = (255, 165, 0)    # orange
+PINK = (255, 192, 203)  # pink
+PURPLE = (128, 0, 128)    # purple
+BROWN = (139, 69, 19)    # brown
+
+SKY_BLUE = (135, 206, 235)  # sky blue
+DARK_GREEN = (0, 128, 0)      # green (dark)
