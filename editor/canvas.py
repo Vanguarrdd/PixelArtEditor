@@ -21,8 +21,8 @@ class Canvas:
     
     # mouse pos to grid pos
     def mouse_to_grid(self, mouse_x: int, mouse_y: int):
-        col = (mouse_x - mouse_y) // self.cell_size
-        row = (mouse_y - mouse_x) // self.cell_size
+        col = (mouse_x - self.canvas_x) // self.cell_size
+        row = (mouse_y - self.canvas_y) // self.cell_size
 
         if 0 <= row < self.rows and 0 <= col < self.cols:
             return int(row), int(col)

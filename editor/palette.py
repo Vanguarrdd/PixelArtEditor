@@ -12,7 +12,7 @@ class Palette:
 
     def get_color_clicked(self, pos):
         for i, color in enumerate(self.colors):
-            rows = i / self.cols 
+            rows = i // self.cols 
             cols = i % self.cols
 
             x = self.x + cols * (self.color_size + 5)
