@@ -1,5 +1,6 @@
 from utils.constants import * 
 from editor.canvas import Canvas
+from editor.palette import Palette
 import pygame
 
 class Main:
@@ -11,6 +12,7 @@ class Main:
         self.clock = pygame.time.Clock()
         
         self.canvas = Canvas(ROWS, COLS, PIXEL_SIZE, CANVAS_X, CANVAS_Y)
+        self.palette = Palette(SCREEN_WIDTH // 2 - (6 * (40 + 2)) // 2, 50,COLORS)
  
     def run(self) -> None:
         self.dt = self.clock.tick(FPS)
@@ -23,6 +25,7 @@ class Main:
             self.screen.fill(BG_COLOR)
 
             self.canvas.draw_canvas(self.screen)
+            self.palette.draw(self.screen)
             pygame.display.flip()
 
         pygame.quit()

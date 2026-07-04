@@ -41,3 +41,7 @@ BROWN = (139, 69, 19)    # brown
 
 SKY_BLUE = (135, 206, 235)  # sky blue
 DARK_GREEN = (0, 128, 0)      # green (dark)
+
+COLORS = [BLACK, WHITE, GREY, DARK_GREY, LIGHT_GREY, RED, 
+          GREEN, BLUE, YELLOW, CYAN, MAGENTA, ORANGE, PINK, 
+          PURPLE, BROWN, SKY_BLUE, DARK_GREEN]
